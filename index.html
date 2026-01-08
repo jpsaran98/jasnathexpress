@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasnath Express Logistics</title>
+
+<style>
+    body { margin:0; font-family:Arial; background:#f6f6f6; }
+    header { background:#004aad; color:white; padding:25px; text-align:center; }
+    nav { background:#00337f; padding:12px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-size:17px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+
+    .hero {
+        background:#000;
+        color:white;
+        padding:70px 20px;
+        text-align:center;
+        background-image:url('https://images.unsplash.com/photo-1532635247-2f3c0c88e60b');
+        background-size:cover; background-position:center;
+    }
+    .hero h1 { font-size:40px; font-weight:bold; }
+    .section { padding:40px; max-width:900px; margin:auto; }
+    .section h2 { color:#004aad; }
+
+    input[type=text] {
+        padding:12px; width:60%; border:1px solid #999; border-radius:5px;
+    }
+    button {
+        padding:12px 25px; background:#004aad; border:none; color:white;
+        border-radius:5px; cursor:pointer;
+    }
+    button:hover { background:#00337f; }
+
+    footer {
+        background:#00337f; color:white; text-align:center;
+        padding:20px; margin-top:40px;
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Jasnath Express Logistics</h1>
+    <p>Fast • Safe • Reliable Transportation Across India</p>
+</header>
+
+<nav>
+    <a href="#track">Tracking</a>
+    <a href="#services">Services</a>
+    <a href="#login">Login</a>
+    <a href="#branches">Branches</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Swift Deliveries, Every Time</h1>
+    <p>Your trusted logistics partner</p>
+</div>
+
+<!-- Tracking -->
+<div class="section" id="track">
+    <h2>Track Your Shipment</h2>
+    <input type="text" id="trackId" placeholder="Enter Tracking No.">
+    <button onclick="doTrack()">Track</button>
+</div>
+
+<script>
+function doTrack() {
+    let id = document.getElementById('trackId').value.trim();
+    if(id === "") { alert("Please enter tracking number"); return; }
+    window.open("https://smexpresslogistics.com/order-tracking/?tracking_id=" + id);
+}
+</script>
+
+<!-- Services -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li><b>Express Delivery</b> – Fastest delivery across India</li>
+        <li><b>Transport Logistics</b> – Reliable trucks & tracking</li>
+        <li><b>Warehousing</b> – Safe & secure storage</li>
+        <li><b>Door-to-Door Delivery</b></li>
+    </ul>
+</div>
+
+<!-- Login -->
+<div class="section" id="login">
+    <h2>Online Portal Login</h2>
+    <p><b>Employee Login</b> — <a href="https://yana.smexpresslogistics.com/IYANA/" target="_blank">Open Login</a></p>
+    <p><b>Franchisee Login</b> — <a href="http://fr.smexpresslogistics.com:7080/IYFR/" target="_blank">Open Login</a></p>
+    <p><b>Customer Login</b> — <a href="http://customer.smexpresslogistics.com:7080/IYW/" target="_blank">Open Login</a></p>
+</div>
+
+<!-- Branches -->
+<div class="section" id="branches">
+    <h2>Our Branches & Franchisee List</h2>
+    <p><a href="https://smexpresslogistics.com/contact/" target="_blank">View Branch & Franchise List</a></p>
+</div>
+
+<!-- Contact -->
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Address:</b> Shop no 4, Lokmanya Apartment, Kachori Road, Palghar, MH 401404</p>
+    <p><b>Main Phone:</b> +91 9602020088</p>
+    <p><b>Email:</b> info@jasnathexpresslogistics.com</p>
+    <p><b>Mr. K R Chaudhary:</b> +91 9602020088</p>
+    <p><b>Mr. O P Chaudhary:</b> +91 9284205856</p>
+</div>
+
+<footer>
+    © 2026 Jasnath Express Logistics. All Rights Reserved.
+</footer>
+
+</body>
+</html>
