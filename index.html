@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jashnath Express Logistics</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+        color: white;
+    }
+
+    .overlay {
+        background: rgba(0,0,0,0.65);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 10;
+        padding: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .logo {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 34px;
+        margin: 5px 0 10px;
+        font-weight: 700;
+        color: #ff7b3a;
+        text-shadow: 0 0 10px black;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #ffffffd9;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.15);
+        padding: 25px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 450px;
+        margin: auto;
+        backdrop-filter: blur(6px);
+        box-shadow: 0 0 20px #00000060;
+    }
+
+    input {
+        width: 85%;
+        padding: 12px;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 15px;
+        width: 90%;
+        padding: 14px;
+        border: none;
+        background: #ff7029;
+        color: white;
+        font-size: 18px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff8b4b;
+    }
+
+    .links {
+        margin-top: 35px;
+        line-height: 2.2;
+        font-size: 18px;
+    }
+
+    a {
+        color: #ffb37a;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding: 20px;
+        font-size: 16px;
+        color: #ddd;
+    }
+
+</style>
+
+<script>
+function trackShipment() {
+    let id = document.getElementById("track").value.trim();
+    if(id === "") {
+        alert("Please enter Tracking Number");
+        return;
+    }
+    window.location.href = 
+        "https://smexpresslogistics.com/tracking-result/?reqCode=showTrackYourCosignmentPage&searchType=AWBNO&searchValue=" + id;
+}
+</script>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+    <img class="logo" src="https://raw.githubusercontent.com/jpsaran98/jasnathxpress/main/logo.png" alt="Logo">
+
+    <h1>Jashnath Express Logistics</h1>
+    <div class="tagline">Fast • Safe • Reliable Transportation Across India</div>
+
+    <div class="card">
+        <h2>Track Your Shipment</h2>
+        <input id="track" type="text" placeholder="Enter Tracking Number...">
+        <button onclick="trackShipment()">Track Now</button>
+    </div>
+
+    <div class="links">
+        <h2>Online Portal Login</h2>
+
+        <a href="https://yana.smexpresslogistics.com/IYANA/" target="_blank">Employee Login</a><br>
+        <a href="http://fr.smexpresslogistics.com:7080/IYFR/" target="_blank">Franchisee Login</a><br>
+        <a href="http://customer.smexpresslogistics.com:7080/IYW/" target="_blank">Customer Login</a><br><br>
+
+        <h2>Branches & Franchisee List</h2>
+        <a href="https://smexpresslogistics.com/contact/" target="_blank">
+            View All Branches
+        </a>
+    </div>
+
+    <div class="footer">
+        <b>Contact Us</b><br><br>
+        📍 Shop no 4, Lokmanya Apartment, Kachori Road, Palghar, MH 401404<br>
+        📞 Mr. K R Chaudhary: +91 9602020088<br>
+        📞 Mr. O P Chaudhary: +91 9284205856<br>
+        ✉ info@jasnathexpresslogistics.com<br><br>
+        © 2026 Jashnath Express Logistics. All Rights Reserved.
+    </div>
+</div>
+
+</body>
+</html>
