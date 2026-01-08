@@ -1,1 +1,0 @@
-console.log('Pro Version v2 Loaded')
