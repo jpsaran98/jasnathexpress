@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jasnath Express Logistics</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 30px;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.header img {
+    height: 55px;
+}
+
+/* MENU */
+.menu a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu a:hover {
+    color: #00e1ff;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: url('https://images.pexels.com/photos/6169667/pexels-photo-6169667.jpeg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 90px;
+}
+.hero h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin: 0;
+}
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* TRACKING BOX */
+.track-box {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.track-box input {
+    padding: 12px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.track-box button {
+    padding: 12px 18px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.track-box button:hover {
+    background: #e25800;
+}
+
+/* FLOATING WHATSAPP LEFT */
+.whatsapp-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #25D366;
+    padding: 14px 18px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* FLOATING WHATSAPP RIGHT */
+.whatsapp-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 14px 18px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="https://i.ibb.co/7ygV7tQ/logo.png" alt="Logo" />
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#tracking">SHIPMENT TRACKING</a>
+        <a href="http://fr.smexpresslogistics.com:7080/IYFR/" target="_blank">FRANCHISEE LOGIN</a>
+        <a href="https://yana.smexpresslogistics.com/IYANA/" target="_blank">EMPLOYEE LOGIN</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Reliable Express Logistics Solutions</h1>
+    <p>Fast air, train, and road cargo services for your needs.</p>
+
+    <!-- TRACKING -->
+    <div class="track-box" id="tracking">
+        <form action="https://smexpresslogistics.com/tracking-result/" method="GET" target="_blank">
+            <input type="text" name="searchValue" placeholder="Enter Tracking Number" required />
+            <input type="hidden" name="reqCode" value="showTrackYourCosignmentPage" />
+            <input type="hidden" name="searchType" value="AWBNO" />
+            <button type="submit">Track</button>
+        </form>
+    </div>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTONS -->
+<a class="whatsapp-left" 
+   href="https://wa.me/919602020088?text=Hello%20Jasnath%20Express"
+   target="_blank">
+    📞 KR Chaudhary
+</a>
+
+<a class="whatsapp-right"
+   href="https://wa.me/919284205856?text=Hello%20Jasnath%20Express"
+   target="_blank">
+    📞 OP Chaudhary
+</a>
+
+<div class="footer">
+    © 2025 Jasnath Express Logistics. All Rights Reserved.
+</div>
+
+</body>
+</html>
